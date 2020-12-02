@@ -27,7 +27,7 @@ SECRET_KEY = 'o13v)ntwug%4s&a%+fe!7td7gli3zi#-c6fuygj_k#(y9u5m+l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mysite.pythonanywhere.com']
+ALLOWED_HOSTS = ['heliogramlaboratory.pythonanywhere.com']
 
 
 # Application definition
