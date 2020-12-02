@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+{% extends "appone/base.html" %}
+    {% block body_block %}
+
+    <h1>The Home page</h1>
+    <h1>This is index.html page</h1>
+    
+    
+    <div>
+        {{ text|upper }}
+        {{ number|add:'100000000' }}
+        {{ text_2|cut:'Hello' }}
+    </div>
+
+
+
+
+
+
+
+
+
+    <a href="{% url 'appone:other' %}">The other page</a>
+    <!-- A really common bug or error that will be a head scratcher is if you accidentally leave an extra line here in the string either before you have this or after -->
+
+
+    <a href="{% url 'appone:relative' %}">The Relative page</a>
+    <!-- A really common bug or error that will be a head scratcher is if you accidentally leave an extra line here in the string either before you have this or after -->
+
+    <a href="{% url 'admin:index' %}">Admin page</a>
+    <!--in order for this to work sometimes you have to make the migration just because admin wants it that way-->
+    {% endblock %}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends "appone/base.html" %}
+    {% block body_block %}
+
+    <h1>The Other page</h1>
+    <h2>this is an example of template inheritance</h2>
+
+
+    <a href="{% url 'index' %}">Back to Home</a>
+
+
+
+    <a href="{% url 'appone:relative' %}">The Relative page</a>
+    <!-- A really common bug or error that will be a head scratcher is if you accidentally leave an extra line here in the string either before you have this or after -->
+
+    <a href="{% url 'admin:index' %}">Admin page</a>
+    <!--in order for this to work sometimes you have to make the migration just because admin wants it that way-->
+    {% endblock %}
